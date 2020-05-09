@@ -71,29 +71,26 @@ export default {
     height: 100vh;
     min-height: 700px;
     min-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+    padding-left: 18rem;
+    padding-right: 18rem;
+
     .arrow {
-        align-self: flex-start;
-        padding-left: 18.5rem;
-        // padding-bottom: 2rem;
-        margin-top: 3rem;
+        padding-left: 0.2rem;
+
         img {
             width: 1.6rem;
             background: grey;
             padding: 0.25rem;
+            margin-top: 3rem;
             border-radius: 50%;
         }
     }
     .current-book {
+        padding-top: 3rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        max-height: 75vh;
-        max-width: 60vw;
-        margin-bottom: 3rem;
 
         .big-book {
             min-width: 480px;
@@ -129,7 +126,7 @@ export default {
         }
 
         .information {
-            min-height: 75vh;
+            min-height: 550px;
             min-width: 440px;
             display: flex;
             justify-content: space-between;
@@ -162,7 +159,6 @@ export default {
                 border-radius: 2%;
                 margin-bottom: 1rem;
                 p {
-                    // padding-top: 0.5rem;
                     margin-bottom: 0;
                     margin-top: 0;
                 }
