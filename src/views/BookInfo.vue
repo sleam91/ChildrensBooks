@@ -69,7 +69,7 @@ export default {
     background: rgb(31, 31, 31);
     width: 100vw;
     height: 100vh;
-    min-height: 700px;
+    min-height: 800px;
     min-width: 1000px;
 
     padding-left: 18rem;
@@ -127,6 +127,7 @@ export default {
 
         .information {
             min-height: 550px;
+            max-height: 550px;
             min-width: 440px;
             display: flex;
             justify-content: space-between;
