@@ -1,6 +1,6 @@
 <template>
     <div class="book-info">
-        <router-link to="/">
+        <router-link to="/" class="arrow">
             <img src="../assets/arrow.svg" alt />
         </router-link>
         <div class="current-book">
@@ -66,24 +66,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
+.arrow {
+    align-self: flex-start;
+    padding-left: 20rem;
+    img{
     width: 1.6rem;
     background: grey;
     padding: 0.25rem;
     border-radius: 50%;
+    }
 }
 
 .book-info {
     background: rgb(31, 31, 31);
     width: 100vw;
     height: 100vh;
-    padding-top: 3rem;
-    padding-left: 18rem;
-    padding-right: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 3rem;
+    // padding-left: 18rem;
+    // padding-right: 18rem;
     .current-book {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        max-width: 60vw;
         .white-background {
             background: white;
             border-radius: 0.2rem;
