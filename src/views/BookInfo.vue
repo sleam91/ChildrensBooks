@@ -79,7 +79,7 @@ export default {
         padding-left: 0.2rem;
 
         img {
-            width: 1.6rem;
+            width: 2.5rem;
             background: grey;
             padding: 0.25rem;
             margin-top: 3rem;
