@@ -17,7 +17,6 @@ export default {
     data() {
         return {
             bookColor: {
-                // backgroundColor: this.book.color,
                 backgroundImage:
                     "linear-gradient(to top right," +
                     this.book.color +

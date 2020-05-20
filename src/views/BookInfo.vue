@@ -42,23 +42,20 @@
 <script>
 export default {
     name: "BookInfo",
-    data() {
-        return {
-            bookColor: {
+    computed: {
+        getBook() {
+            return this.$store.getters.getBook(this.$route.params.id);
+        },
+        bookColor() {
+            return {
                 backgroundColor: "white",
                 backgroundImage:
                     "linear-gradient(to top right," +
-                    this.$root.getBook(this.$route.params.id).color +
+                    this.getBook.color +
                     "," +
-                    this.$root.getBook(this.$route.params.id).color +
+                    this.getBook.color +
                     "99)"
-            }
-        };
-    },
-    methods: {},
-    computed: {
-        getBook() {
-            return this.$root.getBook(this.$route.params.id);
+            };
         }
     }
 };

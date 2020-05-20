@@ -2,7 +2,7 @@
     <div class="home">
         <h1>8 Classic Childrens books</h1>
         <Book
-            v-for="singleBook in this.$root.getBooks()"
+            v-for="singleBook in $store.state.books"
             v-bind:key="singleBook.id"
             v-bind:book="singleBook"
         />
@@ -18,11 +18,6 @@ export default {
     components: {
         Book
     },
-    data() {
-        return {};
-    },
-    methods: {},
-    computed: {}
 };
 </script>
 
